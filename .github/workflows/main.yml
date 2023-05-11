@@ -9,6 +9,9 @@ jobs:
   call_api:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up environment variable
+        run: echo "BASTILA_KEY=${{ secrets.BASTILA_KEY }}" >> $BASTILA_KEY
+
       - name: Check out repository
         uses: actions/checkout@v2
       

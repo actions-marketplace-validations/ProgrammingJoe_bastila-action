@@ -3,6 +3,7 @@ import json
 import re
 from pathlib import Path
 import sys
+import os
 
 base_url = 'https://bastilaapi-production.up.railway.app'
 # base_url = 'https://bastila.dev'
@@ -66,7 +67,7 @@ def create_check(session):
 def main():
     session = requests.Session()
     session.headers.update({
-        'Authorization': 'Api-Key 0nkso1C9.W49L5ctgVESXUwyrcojux0wrz3WPAGqo',
+        'Authorization': f'Api-Key {os.getenv('BASTILA_KEY')}',
         'Content-Type': 'application/json'
     })
     print('Starting')
