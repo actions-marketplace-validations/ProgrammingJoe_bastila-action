@@ -1,5 +1,7 @@
 name: Bastila PR Check
 description: Bastila searches your code for predefined outdated practices and standards
+icon: git-pull-request
+color: orange
 
 on:
   pull_request:
