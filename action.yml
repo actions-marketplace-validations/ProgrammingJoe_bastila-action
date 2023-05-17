@@ -1,5 +1,5 @@
 name: Bastila PR Check
-description: Bastila searches your code for predefined outdated practices and standards, ensures you do not add anymore into your code, and tracks the progression of removing those old standards.
+description: Bastila searches your code for predefined outdated practices and standards
 
 on:
   pull_request:
