@@ -1,4 +1,4 @@
-name: PR API Request
+name: Bastila PR Check
 
 on:
   pull_request:
