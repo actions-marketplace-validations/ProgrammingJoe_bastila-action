@@ -28,5 +28,5 @@ runs:
         pip install requests
       shell: bash
 
-    - run: python search_files.py
+    - run: python ${{ github.action_path }}/search_files.py
       shell: bash
