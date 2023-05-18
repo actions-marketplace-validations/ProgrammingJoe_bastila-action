@@ -3,10 +3,12 @@ description: 'Bastila searches your code for predefined outdated practices and s
 branding:
   icon: 'git-pull-request'
   color: 'orange'
+
 inputs:
   BASTILA_KEY:
     description: 'The API key for Bastila'
     required: true
+
 runs:
   using: 'composite'  # to enable running multiple shell commands
   steps:
@@ -26,5 +28,5 @@ runs:
         pip install requests
       shell: bash
 
-    - run: python api_request.py
+    - run: python search_files.py
       shell: bash
