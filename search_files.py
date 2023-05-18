@@ -67,7 +67,7 @@ def create_check(session):
 def main():
     session = requests.Session()
     session.headers.update({
-        'Authorization': f'Api-Key {os.getenv('BASTILA_KEY')}',
+        'Authorization': f'Api-Key {os.getenv("BASTILA_KEY")}',
         'Content-Type': 'application/json'
     })
     print('Starting')
